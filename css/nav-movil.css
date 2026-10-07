@@ -1,0 +1,43 @@
+/* barra de navegación en celular: todo en una sola fila, igual que en escritorio */
+@media (max-width: 599px) {
+  body > header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: 6px 2vw;
+    text-align: left;
+  }
+
+  body > header > a:first-child {
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  body > header img[width="100"] {
+    width: 10vw !important;
+    height: 10vw !important;
+  }
+
+  body > header .navegacion {
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: auto;
+    gap: 2vw;
+    font-size: 2.8vw;
+    white-space: nowrap;
+  }
+
+  body > header .navegacion img[width="80"],
+  body > header .navegacion img[width="50"] {
+    width: 5.5vw !important;
+    height: 5.5vw !important;
+  }
+
+  body > header .badge-carrito {
+    font-size: 2.4vw;
+    min-width: 3.6vw;
+    height: 3.6vw;
+    padding: 0 1vw;
+  }
+}
